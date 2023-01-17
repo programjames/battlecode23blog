@@ -35,7 +35,7 @@ A *very* brief overview of the game mechanics:
 
 We spent most of the first week building up our infrastructure: pathing, communication, and resource gathering. It wasn't until 36 hours before submissions were due that we even created any units other than carriers!
 
-![[launcher_commit_msg.png]]
+![launcher_commit_msg.png](launcher_commit_msg.png)
 
 That's because pathing and resource gathering are *really hard* this year. Last year every spot was more-or-less passable, there was just rubble that slowed units down. Also, mined resources automatically got added to your team's bank. This year pathing has to take into account impassable locations and currents, and resources have to be brought back to base in order to use them. The largest change this makes is *you cannot path backwards from your destination anymore*. You have to monitor your robot's cooldown during the pathing algorithm, and if it lands on a current with too high a cooldown, it will move along that current. Resource gathering was also a lot trickier. Carriers can move in, grab a couple resources, and move out, so simply sitting at a well is wasting time for other carriers. Plus, bringing resources to headquarters, upgrading wells, and trying to concoct an elixir well all add complexity to resource gathering.
 
@@ -159,4 +159,4 @@ Twenty minutes later we discovered a bug in Teh Dev's engine. I guess we were th
 
 -----
 ### Example Match
-![[games_presprint.gif]]
+![games_presprint.gif](games_presprint.gif)
